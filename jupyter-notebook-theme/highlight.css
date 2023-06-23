@@ -1,0 +1,59 @@
+.CodeMirror {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.cm-s-ipython span {
+    font-weight: normal !important;
+    font-style: normal !important;
+    color: #efefef;
+}
+.cm-s-ipython span.cm-keyword {
+    color: #d73a49;
+}
+.cm-s-ipython span.cm-comment {
+    color: #6a737d;
+}
+.cm-s-ipython span.cm-string {
+    color: #28993b;
+}
+.cm-s-ipython span.cm-operator {
+    color: #d73a49;
+}
+.cm-s-ipython span.cm-variable {
+    color: #efefef;
+}
+.cm-s-ipython span.cm-variable-2 {
+    color: #ff806a;
+}
+.cm-s-ipython span.cm-builtin {
+    color: #fcff54;
+    /*color: #e36209;*/
+}
+.cm-s-ipython span.cm-number {
+    color: #0091ff;
+}
+.cm-s-ipython span.cm-property {
+    color: #a02cff;
+}
+.cm-s-ipython span.cm-def {
+    color: #6f42c1;
+}
+
+/* Markdown */
+
+.cm-s-default .cm-header {
+    color: #efefef;
+}
+
+.cm-s-default .cm-variable-2, .cm-s-default .cm-link, .cm-header, .cm-strong {
+    color: #efefef;
+}
+
+.cm-s-default .cm-string {
+    color: #66dbff;
+}
+
+body.notebook_app div#notebook pre {
+    color: #efefef;
+}

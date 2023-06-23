@@ -1,0 +1,245 @@
+@import "./main.css";
+@import "./icons.css";
+@import "./button.css";
+@import "./table.css";
+@import "./panel.css";
+@import "./home.css";
+@import "./notebook.css";
+@import "./rendered_html.css";
+@import "./menu.css";
+@import "./modal.css";
+@import "./highlight.css";
+
+body.notebook_app,
+body.notebook_app > #header {
+    background: linear-gradient(to right, #89253e, #3a6186);
+/*     background-color: #232323de; */
+}
+
+.cell {
+    border: 1px solid rgb(24, 26, 27);
+    border-radius: 4px;
+
+}
+
+body.notebook_app.command_mode div.cell.selected div.inner_cell .rendered_html {
+    border: 1px solid rgb(24, 26, 27);
+    border-radius: 4px;
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 0.6)
+}
+
+body.notebook_app div.cell.selected div.input_area {
+    border-radius: 4px;
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 0.6)
+}
+
+div.output_stderr {
+    background-color: #cb1f1f;
+    color: #373737;
+    border-radius: 4px;
+    margin-top: 3px;
+}
+
+tbody tr:nth-child(even),
+tbody th:nth-child(even) {
+  color: #efefef;
+}
+
+.rendered_html tbody tr:nth-child(odd) {
+    background-color: #373737;
+    color: #efefef;
+}
+
+.rendered_html thead {
+    border: none;
+}
+
+thead th {
+    color: #efefef;
+}
+
+b,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a,
+i,
+.btn .fa,
+.icon-fixed-width,
+#kernel_indicator .kernel_indicator_name{
+    color: #fefefe;
+}
+
+.cm-s-ipython .CodeMirror-cursor {
+    border-left: 3px solid #efefef !important;
+}
+
+.completions {
+    border: 1px solid rgb(24 26 27);
+    -webkit-box-shadow: 0 3px 6px 0 rgb(0 0 0 / 0.3);
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 0.3);
+}
+
+.completions select {
+    background-color: rgb(24 26 27);
+    color: #efefef;
+    padding: 3px;
+}
+
+/* Main Menu */
+body > #header, body > #header .header-bar {
+    background: linear-gradient(to right, #89253e, #3a6186);
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 0.3);
+}
+
+#site, body:not(.notebook_app) #site::before {
+    background-color: rgb(24 26 27);
+    border: none;
+}
+
+
+body:not(.notebook_app) #ipython-main-app .nav-tabs > li.active > a {
+    background-color: #232323;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 0.3);
+    color: #efefef;
+    border-color: #e36209 transparent transparent transparent;
+}
+
+body:not(.notebook_app) #ipython-main-app .nav-tabs > li > a {
+    border-radius: 3px;
+    color: #efefef;
+}
+
+body:not(.notebook_app) #ipython-main-app .nav-tabs > li > a:hover {
+    border-radius: 3px;
+    color: #767676;
+}
+
+.dynamic-instructions {
+    color: #efefef;
+}
+
+.list_toolbar .fa-refresh {
+    background-image: url("icons/restart-light.png");
+}
+
+span#login_widget > .button, #logout, #shutdown {
+    border-radius: 4px;
+    color: #efefef;
+    font-weight: bold;
+    background-color: #2dc350;
+    box-shadow: rgba(45, 195, 80, .2) 0 3px 5px -1px,rgba(45, 195, 80, .14) 0 6px 10px 0,rgba(45, 195, 80, .12) 0 1px 18px 0;
+    border: none;
+    padding: 5px 18px;
+}
+
+span#login_widget > .button, #shutdown {
+    background-color: #ef272b;
+    box-shadow: rgba(239, 39, 43, .2) 0 3px 5px -1px,rgba(239, 39, 43, .14) 0 6px 10px 0,rgba(239, 39, 43, .12) 0 1px 18px 0;
+}
+
+#notebook_list .list_header {
+    background-color: #232323;
+    border: 0 solid #343434;
+}
+
+.output_png {
+    margin-top: 3px;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    border-color: #212121;
+}
+
+#notebook_list .list_item > div:hover {
+    background-color: #242424;
+}
+
+.item_name:hover, .list_item a:hover {
+    color: #c0c0c0;
+    text-decoration: none;
+}
+
+#running .panel-group .panel {
+    background-color: #232323;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 0.3);
+}
+
+#new-menu .dropdown-header {
+    border: none;
+}
+
+.terminal-app #header {
+    background: linear-gradient(to right, #89253e, #3a6186);
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 0.3);
+}
+
+.terminal-app #terminado-container {
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 0.3);
+}
+
+.terminal-app .terminal {
+    font-family: 'Hack Nerd Font';
+}
+
+div.cell.selected, div.cell.selected.jupyter-soft-selected {
+    border-left: 4px solid #2dc350;
+}
+
+.CodeMirror-hscrollbar::-webkit-scrollbar-thumb {
+    background: #4e4e4e;
+    border-radius: 8px;
+}
+
+.CodeMirror-hscrollbar::-webkit-scrollbar {
+      height: 6px;
+}
+
+.CodeMirror-hscrollbar::-webkit-scrollbar-track {
+    background-color: #232323;
+    border-radius: 8px
+}
+
+div.output_subarea::-webkit-scrollbar-thumb {
+    background: #4e4e4e;
+    border-radius: 8px;
+}
+
+div.output_subarea::-webkit-scrollbar {
+      height: 6px;
+}
+
+div.output_subarea::-webkit-scrollbar-track {
+    background-color: #232323;
+    border-radius: 8px
+}
+
+#site::-webkit-scrollbar-thumb {
+    background: #4e4e4e;
+    border-radius: 8px;
+}
+
+#site::-webkit-scrollbar {
+      width: 8px;
+      min-height: 20px;
+}
+
+#site::-webkit-scrollbar-track {
+    background-color: #232323;
+    border-radius: 8px
+}
+
+ul#new-menu {
+    margin-top: 3px !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 3px !important;
+    border-radius: 6px !important;
+    background-color: #23232334;
+    backdrop-filter: blur(10px);
+    border: 1px solid #efefef23;
+}

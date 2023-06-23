@@ -1,0 +1,65 @@
+.dropdown > a {
+    color: #efefef !important;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px 1px 0 1px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.dropdown > a:hover,
+.dropdown.open > a {
+    color: #efefef !important;
+}
+.dropdown.open > a {
+    border-radius: 4px;
+    border: solid 1px #23343423;
+    background-color: #21212123 !important;
+    backdrop-filter: blur(30px);
+    z-index: 10000;
+}
+
+.dropdown > .dropdown-menu {
+    margin-top: 3px !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 3px !important;
+    border-radius: 6px !important;
+    background-color: #23232334;
+    backdrop-filter: blur(30px);
+    border: 1px solid #efefef23;
+}
+.dropdown-menu {
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 0.3);
+    background-color: #212121;
+    border-radius: 4px;
+    padding: 8px 0;
+    font-size: 1em;
+}
+.dropdown-menu > .disabled > a {
+    color: rgba(0,0,0,0.3);
+}
+.dropdown-menu > li > a {
+    height: 32px;
+    line-height: 32px;
+    color: #efefef;
+    display: block;
+    padding: 0 24px;
+}
+.dropdown-submenu > a {
+    position: relative;
+}
+.dropdown-submenu > a::after {
+    position: absolute;
+    top: 7px;
+    right: 16px;
+    opacity: 0.87;
+}
+.dropdown-menu > li > a:hover {
+    color: #efefef;
+    background-color: #3e3e3e;
+}
+.dropdown-menu .divider {
+    margin: 8px 0;
+    background-color: #343434;
+}
